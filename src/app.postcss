@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/fonts/Poppins/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+	font-family: 'RobotoMono';
+	src: url('/fonts/Roboto/RobotoMono-VariableFont_wght.ttf');
+}
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+.h1 {
+	@apply mb-8 uppercase italic;
+}
+.h2 {
+	@apply uppercase italic;
+}
+.h3 {
+	@apply uppercase;
+}
+.material-symbols-rounded {
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 200,
+		'GRAD' 200,
+		'opsz' 48;
+}
+.btn {
+	@apply text-sm uppercase transition-all duration-300;
+}
+p {
+	@apply mb-4;
+}
+.nav-link {
+	@apply flex w-full items-center justify-center border-x border-dashed border-tertiary-500 py-2 text-center transition-all duration-300 hover:bg-tertiary-700 md:border-b;
+}
+.nav-link-text {
+	@apply hidden text-[0.5rem] uppercase text-tertiary-400 md:block md:text-sm;
+}
+.nav-link-icon {
+	@apply w-full text-2xl text-secondary-500 md:text-2xl;
+}
+.drawer-link {
+	@apply mb-4 flex items-center gap-4 uppercase text-tertiary-400 transition-all duration-300 hover:text-white;
+}
+.drawer-link .icon {
+	@apply text-primary-500 transition-all duration-300;
+}
+.drawer-link:hover .icon {
+	@apply text-primary-400;
+}
+.tiptap {
+	@apply rounded-3xl rounded-t-none p-4;
+	outline: 0;
+}
+.tiptap h2 {
+	@apply h2 mb-4;
+}
+.show {
+	transform: translateY(0%);
+}
+.hide {
+	transform: translateY(-100%);
+}
