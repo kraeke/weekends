@@ -25,4 +25,8 @@
 </script>
 
 <Nav />
-<slot />
+<main class="h-screen w-screen px-2 pb-20 pt-2 md:py-2 md:pl-24 md:pr-2">
+	<div class="mx-auto h-full w-full">
+		<slot />
+	</div>
+</main>
